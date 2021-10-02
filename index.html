@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mycss.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <section class="head">
+      <div class="container">
+        <div class="into menu">
+          <svg class="menu_icon" width="30px" height="30px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M4.5 5h15a.5.5 0 1 1 0 1h-15a.5.5 0 0 1 0-1zm0 6h15a.5.5 0 1 1 0 1h-15a.5.5 0 1 1 0-1zm0 6h15a.5.5 0 1 1 0 1h-15a.5.5 0 1 1 0-1z"
+            ></path>
+          </svg>
+        </div>
+        <div class="into closemenu">
+          <svg width="30" height="30" viewBox="0 0 20 20">
+            <path
+              d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"
+            ></path>
+          </svg>
+        </div>
+        <div class="into home">
+          <svg width="30" height="30" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M12.527 3.075c.35.104.64.263 1.27.876L19.1 9.123c.374.364.49.505.601.678.11.174.185.351.232.552.042.178.062.34.066.742L20 17.718c0 .446-.046.607-.134.77a.906.906 0 01-.378.378c-.163.088-.324.134-.77.134H14v-4.718c0-.446-.046-.607-.134-.77a.906.906 0 00-.378-.378c-.142-.077-.284-.122-.616-.132L12.718 13h-1.436c-.446 0-.607.046-.77.134a.906.906 0 00-.378.378c-.077.142-.122.284-.132.616l-.002.154V19H5.282c-.446 0-.607-.046-.77-.134a.906.906 0 01-.378-.378c-.088-.163-.134-.324-.134-.77v-6.462c0-.522.02-.703.067-.903.047-.2.121-.378.232-.552l.077-.113c.098-.134.233-.282.524-.565l5.304-5.172c.629-.613.92-.772 1.269-.876a1.82 1.82 0 011.054 0zm-.286.958a.825.825 0 00-.482 0c-.18.054-.326.139-.63.418l-.227.216L5.598 9.84c-.3.293-.385.39-.456.5a.76.76 0 00-.102.242c-.026.112-.037.224-.04.531l.002 6.807.005.073.074.006L8.999 18 9 14.268l.003-.17c.013-.448.083-.749.249-1.058a1.9 1.9 0 01.788-.788c.306-.164.6-.234 1.043-.249l.199-.003h1.45l.17.003c.448.013.749.083 1.058.249.337.18.608.45.788.788.164.306.234.6.249 1.043l.003.199L14.999 18l3.92-.002.073-.006.006-.073.002-.2v-6.615l-.005-.218a1.494 1.494 0 00-.035-.305.747.747 0 00-.102-.242l-.059-.084a3.571 3.571 0 00-.294-.315l-5.407-5.273c-.425-.414-.604-.545-.798-.615l-.06-.019z"
+            ></path>
+          </svg>
+        </div>
+        <div class="into searchicon">
+          <svg width="30" height="30" viewBox="0 0 24 24">
+            <path
+              d="M10.5 3a7.5 7.5 0 015.645 12.438l4.709 4.708a.502.502 0 01-.708.708l-4.708-4.709A7.5 7.5 0 1110.5 3zm0 1a6.5 6.5 0 100 13 6.5 6.5 0 000-13z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <div class="into searchbox">
+          <input type="text" class="searchinput" placeholder="Search..." />
+        </div>
+        <div class="into"></div>
+      </div>
+    </section>
+
+    <section class="section-below container">
+      <div class="menupanel firststatepanel">
+        <div class="menuitems newtask">
+          New Task
+        </div>
+        <div class="menuitems showalltask">
+          Show all Task
+        </div>
+        <div class="menuitems completedtask">
+          Show completed tasks
+        </div>
+        <div class="menuitems notcompletedtask">
+          Show not completed tasks
+        </div>
+      </div>
+      <div class="mainpanel">
+        <div class="mainpanelcontainer">
+          
+          <div class="addnewpanel">
+            <div class="searchcontainer">
+              <form style='padding: 0;' class="savetask">
+              <input
+                type="text"
+                class="searchinput newitembox"
+                placeholder="Write Something here..."
+              />
+              <br>
+              <p class="showerror"></p>
+              <button type="submit" class="okbutton">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path fill="currentColor" d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"></path>
+                </svg>
+              </button>
+              <button class="cancelbutton">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path fill="CurrentColor" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+                </svg>
+              </button>
+            </form>
+            </div>
+          </div>
+          <div class="showitemcontainer">
+            <div class="message"></div><br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="myjs.js"></script>
+  </body>
+</html>

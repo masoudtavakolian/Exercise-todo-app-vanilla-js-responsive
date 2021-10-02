@@ -1,0 +1,305 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p ,*{
+  margin: 0;
+  transition: 1s;
+  /* direction: rtl;
+  justify-content: right;
+  flex-direction:initial; */
+}
+:root{
+    --cal-back:rgb(235, 53, 53);
+    --cal-hover:aliceblue;
+    --cal-menuback:rgba(124, 238, 213, 0.534);
+    --cal-mainback:rgba(161, 161, 161, 0.151);
+    --cal-backpanels:rgba(255, 72, 0, 0.582);
+}
+body {
+  margin: 0 auto;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  background-color: var(--cal-mainback);
+}
+.head{
+    background-color:var(--cal-back);
+    width: 100%;
+    height:40px;
+}
+svg{
+    display: block;
+    color:black;
+    margin: auto;   
+}
+.into{
+    cursor: pointer;
+    width: 35px;
+    height:35px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-left:5px;
+}
+.searchbox{
+    width: 35%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cal-back);
+}
+.searchinput{
+  border-radius: 5px;
+  width: 30%;
+  height: 100%;
+  color: black;
+  border: none;
+  outline: 0;
+  height: 100%;
+  background:none;
+  font-size: 14px;
+  margin-left: 1px;
+  transition:width 2s;
+}
+.searchinput:focus{
+  width: 100%;
+  background-color: var(--cal-hover);
+}
+.searchinput:focus::placeholder{
+  color:black;
+}
+.searchinput::placeholder{
+  color:var(--cal-hover);
+}
+.searchinput:hover::placeholder{
+  color: black;
+}
+.searchinput:focus::placeholder{
+  color: black;
+}
+.container {
+  padding: 1px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu:hover,.home:hover,.closemenu:hover,.searchicon:hover{
+    background-color: var(--cal-hover);
+}
+.closemenu{
+  display: none;
+}
+.section-below{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menupanel{
+  width:0%;
+  opacity: 0;
+  height: auto;
+  padding-top: 10px;
+  transition: width 2s;
+  background-color:rgba(233, 173, 105, 0.226)
+}
+.mainpanel{
+  background-color:var(--cal-mainback);
+  width: 100%;
+  padding: 10px;
+  transition: 2s;
+}
+
+.showmenu{
+  width: 100%; 
+  transition:2s;
+  height: auto;
+  /* display: inline-flex; */
+}
+.mainpanelcheck{
+  width: 100%;
+  transition: 2s;
+}
+.mainpanelcontainer{
+  width: 100%;
+}
+.addnewpanel{
+  display: none;
+  width:100%;
+  background-color:var(--cal-backpanels);
+  border-radius: 10px;
+  /* margin-top: 5px; */
+  margin-bottom: 30px;
+  border: 2px red solid;
+}
+.newitembox{
+  outline: none;
+  width:200px;
+  border-radius: 5px;
+  font-size: 18px;
+  color:blue;
+}
+.searchcontainer{
+  width: 100%; 
+  padding: 10px;
+}
+.showitemcontainer{
+  /* direction: rtl; */
+  width: auto;
+  height: 300px;
+  margin-bottom: 30px;
+  border: 2px red solid;
+  overflow-x: auto; 
+  padding:10px;
+  background-color:var(--cal-backpanels);
+  border-radius: 10px;
+}
+.message{
+ /*  direction: ltr; */
+  width: 100%;
+  font-size: 20px;
+  color: rgb(202, 93, 78);
+}
+/* .showitemcontainer::-webkit-scrollbar {
+  border: 2px red solid;
+}
+
+.showitemcontainer::-webkit-scrollbar-track {
+  border: 2px red solid;
+}
+
+.showitemcontainer::-webkit-scrollbar-thumb {
+  border: 2px red solid;
+} */
+.allitemsnumber{
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  margin-top: 5px;
+  margin-left: 3px;
+  border: 1px solid white;
+  color:white;
+  font-size: 18px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parentitem{
+  display: flex;
+  flex-direction: row-reverse;
+  direction: rtl;
+  text-align: center;
+  align-items: center;
+}
+/*.focusmenuitem{
+  background-color: azure;
+} */
+.allitemscontent{
+  line-break: anywhere;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width:auto;
+  height: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: rgb(54, 17, 85);
+  font-size: 18px;
+  direction:ltr;
+ /*  display: flex;
+  justify-content: center; */
+  align-items: left;
+}
+.doneitem,.deleteitem{
+  padding: 3px;
+}
+.showerror{
+  margin-bottom: 5px;
+}
+.svg-icon{
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+.okbutton{
+  margin-top: 3px;
+  margin-left: 1px;
+  cursor: pointer;
+  border-color:green;
+  border-radius: 8px;
+  width: 35px;
+  height:35px;
+}
+.cancelbutton{
+  cursor: pointer;
+  margin-top: 3px;
+  margin-left: 1px;
+  border-color:red;
+  border-radius: 8px;
+  width: 35px;
+  height:35px;
+}
+.cancelbutton svg{
+  color:red;
+}
+.okbutton svg{
+  color:green;
+}
+.deletedtask{
+  text-decoration: line-through rgba(255, 255, 255, 0.616);
+}
+.menuitems{
+  color:black;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: inherit;
+  height: auto;
+  background-color: var(--cal-backpanels);
+  border: 2px solid red; 
+}
+.menuitemdefaultback{
+  background-color: var(--cal-backpanels)
+}
+.menuitems:hover{
+  background-color: azure;
+}
+@media only screen and (min-width: 600px){
+  .menupanel{
+    width:0%;
+    opacity: 1;
+    height: auto;
+    transition: width 2s;
+    background-color:rgba(233, 173, 105, 0.226)
+  }
+  .showmenu,.firststatepanel{
+    width:20%;
+    transition: 2s;
+    height: auto;
+  }
+  .mainpanel{
+    width: 80%;
+    transition: 2s; 
+    background-color:var(--cal-mainback);
+  }
+  .mainpanelcheck{
+    width: 100%;
+  }
+  .menu{
+    display: none;
+  }
+  .closemenu{
+    display:inline-flex;
+  }
+}
